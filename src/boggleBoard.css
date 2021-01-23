@@ -1,0 +1,8 @@
+.boggle-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.boggle-board {
+  margin-bottom: 20px;
+}
