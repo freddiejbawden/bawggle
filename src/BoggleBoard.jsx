@@ -26,7 +26,11 @@ export default function BoggleBoard(props) {
 
   const getLetterFromDice = (x) => {
     const diceset = (props.n === 4) ? "dice4" : "dice5"
-    return dice[diceset][x][getRandomInt(0,5)]
+    const letter = dice[diceset][x][getRandomInt(0,5)]
+    if (letter === 'Q') {
+      return "Qu"
+    }
+    return letter
   }
   const createRow = (n, arrOrder, start) => {
     let row = []
